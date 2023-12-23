@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zoom Recording Downloader</title>
+    <style>
+        #progress-container {
+            width: 100%;
+            background-color: #eee;
+            margin-top: 20px;
+        }
+
+        #progress-bar {
+            width: 0%;
+            height: 30px;
+            background-color: #4caf50;
+            text-align: center;
+            line-height: 30px;
+            /* Vertically center the text */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Zoom Recording Downloader</h1>
+
+    <form id="login-form">
+        <input type="text" id="account-id" placeholder="Account ID" required /><br>
+        <input type="text" id="client-id" placeholder="Client ID" required /><br>
+        <input type="password" id="client-secret" placeholder="Client Secret" required /><br>
+        <button type="submit">Start</button>
+    </form>
+
+    <div id="progress-container">
+        <div id="progress-bar">0%</div> <!-- Initialize with 0% -->
+    </div>
+
+    <div id="python-output"></div>
+    <script src="renderer.js"></script>
+</body>
+
+</html>
